@@ -1,0 +1,134 @@
+@font-face {
+	font-family: airbag;
+	src: url(../fonts/airbagregular.ttf);
+}
+
+@font-face {
+	font-family: montserrat;
+	src: url(../fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+	font-family: montserratBold;
+	src: url(../fonts/Montserrat-Bold.otf);
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/opensans.ttf);
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	color: #E0E0E0;
+	transition: 0.45s;
+}
+
+p {
+	font-family: OpenSans;
+	font-size: 14px;
+	margin: 0;
+}
+
+button {
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.white-button:hover,
+.top-arrow:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+	transition: 0.45s;
+}
+
+.logo {
+	position: relative;
+	top: -25px;
+	font-family: airbag;
+	color: #FFFFFF;
+	font-size: 48px;
+}
+
+.logo:hover {
+	text-decoration: none;
+	color: #EFEFEF;
+}
+
+header {
+	padding-top: 33px;
+}
+
+.top-block {
+	background: url(../css/images/header-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.menu {
+	color: #FFFFFF;
+	font-family: montserrat;
+}
+
+.top {
+	margin-top: 210px;
+	color: #FFFFFF;
+}
+
+.top h2 {
+	font-family: montserratBold;
+	padding-bottom: 39px;
+	margin: 0;
+}
+
+.top p {
+	font-size: 17px;
+	line-height: 25px;
+}
+
+.top button {
+	margin-top: 36px;
+}
+
+.white-button {
+	font-size: 13px;
+	font-weight: bold;
+	font-family: montserrat;
+	line-height: 36px;
+	border: 1px solid #FFFFFF;
+	border-radius: 20px;
+	padding: 0 25px;
+}
+
+.top-arrow {
+	margin-top: 144px;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	border: 1px solid #FFFFFF;
+	border-radius: 100%;
+	background: url(../css/images/arrow.png) no-repeat;
+	background-position: -1px;
+	background-size: contain;
+}
+
+.top-arrow:hover {
+	background-image: url(../css/images/arrow-black.png);
+}
+
+.top-arrow::after {
+	content: "";
+	margin-top: 47px;
+	margin-bottom: -5px;
+	display: inline-block;
+	width: 1px;
+	height: 104px;
+	background-color: #FFFFFF;
+}
