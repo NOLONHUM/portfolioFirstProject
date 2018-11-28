@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 <body>
 	<div class="top-block">
@@ -19,10 +20,10 @@
 							<ul class="list-inline pull-right">
 								<li><a href="#services-block">Services</a></li>
 								<li><a href="#works-block">Works</a></li>
-								<li><a href="#">Happy Clients</a></li>
-								<li><a href="#">Our professional team</a></li>
-								<li><a href="#">Pricing table</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#clients-block">Happy Clients</a></li>
+								<li><a href="#team-block">Our professional team</a></li>
+								<li><a href="#price-block">Pricing table</a></li>
+								<li><a href="#contact-block">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -35,9 +36,11 @@
 			    <div class="top text-center">
 			    	<h2>Something Nothing</h2>
 			    	<p>Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend<br> ac, enim iam ultricies nisi eleifend tellus.</p>
+			    	<form action="#services-block">
 			    	<button class="white-button">LET’S TALK</button>
+			        </form>
 			    	<br>
-			    	<a href="#" class="top-arrow"></a>
+			    	<a href="#services-block" class="top-arrow"></a>
 			    </div>
 			</div>
 	</div>
@@ -109,8 +112,218 @@
 		</div>
 	</div>
 
+	<div id="clients-block" class="happy-clients">
+		<div class="container text-center">
+			<div class="block-head">
+			<h2>HAPPY CLIENTS</h2>
+			<p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+			<span class="line"></span>
+		    </div>
+		    <div class="client-text">
+		    <p>Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang; lek-lekan? Madeg pendhet lenggah, nanem dipetak dhuwung, dipun <br>awis bokong ayam. gendhis angsal Jawa Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi <br>gesang manah cangkem: nem aken benter bebucal baita dangu</p>
+		   </div>
+		   <p class="quotes">”</p>
+		   <div class="client-item">
+		   	<img id="client-image" src="css/images/client-1.png">
+		   	<h5 id="client-name">Vasiliy Nganu</h5>
+		   	<p id="client-role">Dropbox Senior Developer</p>
+		   </div>
+		   <div class="slider">
+		   	<button class="selected slider-button"></button>
+		   	<button class="slider-button"></button>
+		   	<button class="slider-button"></button>
+		   </div>
+		</div>
+	</div>
+
+	<div id="team-block" class="team">
+		<div class="container text-center">
+			<div class="block-head">
+			<h2>OUR PROFESSIONAL TEAM</h2>
+			<p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+			<span class="line"></span>
+		    </div>
+		    <div class="team-list">
+		    	 <div class="team-item">
+		    		<img src="css/images/team-1.png">
+		    			<p class="name">Salazar Slytherin</p>
+		    			<p class="role">CEO</p>
+		    			<div class="team-links row">
+		    				<button><img src="css/images/link-1.png"></button>
+		    				<button><img src="css/images/link-2.png"></button>
+		    				<button><img src="css/images/link-3.png"></button>
+		    				<button><img src="css/images/link-4.png"></button>
+		    				<button><img src="css/images/link-5.png"></button>
+		    			</div>
+		    	 </div>
+		    	 <div class="team-item">
+		    		<img src="css/images/team-2.png">
+		    			<p class="name">GodricT Gryffindor</p>
+		    			<p class="role">Lead Developer</p>
+		    			<div class="team-links row">
+		    				<button><img src="css/images/link-1.png"></button>
+		    				<button><img src="css/images/link-2.png"></button>
+		    				<button><img src="css/images/link-3.png"></button>
+		    				<button><img src="css/images/link-4.png"></button>
+		    				<button><img src="css/images/link-5.png"></button>
+		    			</div>
+		    	 </div>
+		    	 <div class="team-item">
+		    		<img src="css/images/team-3.png">
+		    			<p class="name">Rowena Ravenclaw</p>
+		    			<p class="role">Lead Designer</p>
+		    			<div class="team-links row">
+		    				<button><img src="css/images/link-1.png"></button>
+		    				<button><img src="css/images/link-2.png"></button>
+		    				<button><img src="css/images/link-3.png"></button>
+		    				<button><img src="css/images/link-4.png"></button>
+		    				<button><img src="css/images/link-5.png"></button>
+		    			</div>
+		    	 </div>
+		    	 <div class="team-item">
+		    		<img src="css/images/team-4.png">
+		    			<p class="name">Helga Hufflepuff</p>
+		    			<p class="role">Marketing</p>
+		    			<div class="team-links row">
+		    				<button><img src="css/images/link-1.png"></button>
+		    				<button><img src="css/images/link-2.png"></button>
+		    				<button><img src="css/images/link-3.png"></button>
+		    				<button><img src="css/images/link-4.png"></button>
+		    				<button><img src="css/images/link-5.png"></button>
+		    			</div>
+		    	 </div>
+		     </div>
+		     <button class="white-button">MEET OUR FULL TEAM</button>
+		    </div>
+		    
+		</div>
+	</div>
+
+	<div class="sponsors">
+		<div class="container text-center">
+			<div class="sponsors-list">
+			<a href="#"><img src="css/images/sponsors-1.png"></a>
+			<a href="#"><img src="css/images/sponsors-2.png"></a>
+			<a href="#"><img src="css/images/sponsors-3.png"></a>
+			<a href="#"><img src="css/images/sponsors-4.png"></a>
+			<a href="#"><img src="css/images/sponsors-5.png"></a>
+		    </div>
+		</div>
+	</div>
+
+	<div id="price-block" class="price">
+		<div class="container text-center">
+			<div class="block-head">
+			<h2>PRICING TABLE</h2>
+			<p>Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+			<span class="line"></span>
+		    </div>
+		    <div class="price-list">
+		    	<div class="price-item">
+		    		<div class="price-item-head">
+		    			<h3>Standard Pack</h3>
+		    			<h2>$50</h2>
+		    			<p>PER MONTH</p>
+		    		</div>
+		    		<div class="price-item-body">
+		    			<p>exercitation ullaborum sed do<br>
+                           eiusmod tempor incididunt ut  quis<br>
+                           nostrud exercitation ullamco laboris</p>
+		    		</div>
+		    		<button>SIGN UP</button>
+		    	</div>
+		    	<div class="price-item best">
+		    		<div class="price-item-head">
+		    			<h3>Best Pack</h3>
+		    			<h2>$100</h2>
+		    			<p>PER MONTH</p>
+		    		</div>
+		    		<div class="price-item-body">
+		    			<p>eiusmod tempor incididunt ut  quis<br> 
+                          nostrud exercitation ullamco laboris<br>
+                            minim aliqua labore dolore nostrud<br>
+                            laboris ullamco incididunt quis</p>
+		    		</div>
+		    		<button>SIGN UP</button>
+		    	</div>
+		    	<div class="price-item">
+		    		<div class="price-item-head">
+		    			<h3>VIP Pack</h3>
+		    			<h2>$250</h2>
+		    			<p>PER MONTH</p>
+		    		</div>
+		    		<div class="price-item-body">
+		    			<p>incididunt ut labore et dolore  magna<br>
+                        aliqua Ut enim ad minim veniam quis nostrud <br>
+                        exercitation ullaborum sed do <br>
+                        eiusmod tempor incididunt ut  quis <br>
+                        nostrud exercitation ullamco laboris</p>
+		    		</div>
+		    		<button>SIGN UP</button>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+	<div id="contact-block" class="contact">
+		<div class="container-fluid text-center">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359039.6861347706!2d106.83698882938887!3d-6.207623049254883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6f50de17c9b%3A0xb287bf108f4ef441!2sMall+Taman+Anggrek!5e0!3m2!1sen!2sru!4v1542456283155" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+	      <div class="contact-form">
+	    	<form action="#" method="post">
+	    		<div class="form-item">
+	    		<label for="user-name">Name</label>
+	    		<input class="fix"  type="text" name="user-name" id="user-name">
+	    	    </div>
+	    	    <div class="form-item">
+	    		<label for="mail">E-mail</label>
+	    		<input type="text" name="mail" id="mail">
+	    	    </div>
+	    	    <div class="form-item">
+	    		<label for="phone">Phone</label>
+	    		<input type="text" name="phone" id="phone">
+	    	    </div>
+	    	    <div class="form-item">
+	    		<label for="message">Message</label>
+	    		<textarea name="message" id="message"></textarea>
+	    		</div>
+	    		<button type="submit">Submit</button>
+	    	</form>
+	      </div>
+	    </div>
+	</div>
+
+	<div class="footer-block">
+		<div class="container">
+			<footer>
+				<div class="footer-row">
+					<div class="col-md-1 text-center">
+						<a href="#" class="footer-logo">ZET</a>
+					</div>
+					<div class="col-md-11 text-center">
+						<div class="copyright">
+							<p>© Copyright 2015. Allright Reserved</p>
+						</div>
+						<div class="social">
+						<p>Stay In Touch</p>
+						<div class="footer-links">
+							<a href="#"><img src="css/images/footer-1.png"></a>
+							<a href="#"><img src="css/images/footer-2.png"></a>
+							<a href="#"><img src="css/images/footer-3.png"></a>
+							<a href="#"><img src="css/images/footer-4.png"></a>
+						</div>
+					    </div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
 
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

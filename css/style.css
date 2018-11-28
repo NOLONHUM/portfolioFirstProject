@@ -1,3 +1,16 @@
+@keyframes appear {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	1% {
+		visibility: visible;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @font-face {
 	font-family: airbag;
 	src: url(../fonts/airbagregular.ttf);
@@ -28,10 +41,13 @@ a:hover,
 a:visited,
 a:active {
 	text-decoration: none;
+}
+
+.top-block a {
 	color: #FFFFFF;
 }
 
-a:hover {
+.top-block a:hover {
 	color: #E0E0E0;
 	transition: 0.45s;
 }
@@ -56,7 +72,7 @@ header {
 .top-arrow:hover {
 	color: #000000;
 	background-color: #FFFFFF;
-	transition: 0.45s;
+	transition: 0.35s;
 }
 
 .logo {
@@ -80,6 +96,12 @@ header {
 .menu {
 	color: #FFFFFF;
 	font-family: montserrat;
+}
+
+.top-nav {
+	visibility: hidden;
+	opacity: 0;
+	transition-duration: 0.4s;
 }
 
 .top {
@@ -110,6 +132,7 @@ header {
 	border: 1px solid #FFFFFF;
 	border-radius: 20px;
 	padding: 0 25px;
+	color: #ffffff;
 }
 
 .top-arrow {
@@ -152,7 +175,8 @@ header {
 }
 
 .block-head p {
-	line-height: 25px;
+	margin-top: 8px;
+	line-height: 20px;
 }
 
 .block-head .line {
@@ -189,7 +213,6 @@ header {
 	margin-top: 60px;
 	padding: 0;
 	width: 100%;
-	height: 600px;
 }
 
 .works-images .line-of-images {
@@ -197,10 +220,382 @@ header {
 }
 
 .works-images img {
-	width: 100%;
-	flex-basis: 320px;
+	max-width: 100%;
 }
 
 .works-images img:hover {
 	opacity: 0.8;
+}
+
+.client-text {
+	margin-top: 59px;
+	line-height: 26px;
+}
+
+.quotes {
+	position: relative;
+	right: 3.5px;
+	margin-top: 25px;
+	line-height: 26px;
+	font-size: 40px;
+	font-style: italic;
+	font-family: montserratBold;
+	color: #abaeb2;
+}
+
+.client-item img {
+	margin-top: 30px;
+	width: 65px;
+	height: 65px;
+	border-radius: 100%;
+}
+
+.client-item h5 {
+	margin-bottom: 0;
+	margin-top: 14px;
+	font-size: 20px;
+	font-family: montserratBold;
+	color: #29323c;
+}
+
+.client-item p {
+	margin-top: 5px;
+	font-size: 13px;
+	font-family: montserrat;
+	color: #696d73;
+}
+
+.slider button {
+	margin-top: 36px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100%;
+	border: 1px solid #2b3746;
+	margin-right: 5px;
+}
+
+.slider button:last-child {
+	margin-right: 0;
+}
+
+.slider .selected {
+	background-color: #2b3746;
+}
+
+.team {
+	margin-top: 99px;
+	background: url(../css/images/team-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.team .block-head,
+.team h2 {
+	color: #f2f2f2;
+}
+
+.team .line {
+	background-color: #f2f2f2;
+}
+
+.team h2 {
+	margin-top: 100px;
+	font-size: 26px;
+	line-height: 22px;
+	font-family: OpenSansExtraBold;
+}
+
+.team-list {
+	margin-top: 85px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.team-item img {
+	max-width: 270px;
+	max-height: 270px;
+}
+
+.team-item {
+	display: inline-block;
+	background-color: rgb(255, 255, 255, 0.8);
+	margin-bottom: 93px;
+}
+
+.team-item .name {
+	margin-top: 31px;
+	line-height: 15px;
+	font-family: montserratBold;
+	color: #29323c;
+}
+
+.team-item .role {
+	margin-top: 8px;
+	font-size: 14px;
+	font-family: montserrat;
+	color: #555c63;
+}
+
+.team-links img {
+	width: 24px;
+	height: 24px;
+}
+
+.team-links button {
+	margin-top: 24px;
+	margin-right: -6px;
+	margin-bottom: 31px;
+}
+
+.team-links button:last-child {
+	position: relative;
+	top: -2.5px;
+}
+
+.team .white-button {
+	margin-bottom: 100px;
+}
+
+.sponsors {
+	background-color: #f5f5f5;
+}
+
+.sponsors-list {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.sponsors-list a {
+	margin-bottom: 43px;
+	margin-right: 40px;
+}
+
+.sponsors-list a:last-child {
+	margin-right: 0;
+}
+
+.price .block-head {
+	margin-bottom: 75px;
+}
+
+.price-list {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 117px;
+}
+
+.price-item {
+	margin: 0;
+	display: block;
+	width: 385px;
+}
+
+.price-item-head,
+.price-item-body {
+	border: 1px solid #eeeeee;
+}
+
+.price-item-head h3,
+.price-item-head h2 {
+	font-family: montserratBold;
+	color: #485563;
+}
+
+.price-item-head h3 {
+	font-size: 20px;
+	margin-top: 28px;
+	margin-bottom: 0;
+}
+
+.price-item-head h2 {
+	margin-top: 25px;
+	margin-bottom: 0;
+	font-size: 45px;
+}
+
+.price-item-head p {
+	margin-top: 5px;
+	margin-bottom: 33px;
+	color: #97999d;
+}
+
+.price-item-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 340px;
+}
+
+.price-item-body p {
+	line-height: 40px;
+	color: #29323c;
+	margin-bottom: 60px;
+}
+
+.price-item button {
+	position: relative;
+	top: -75px;
+	background-color: #485563;
+	border-radius: 25px;
+	color: #e8e8e8;
+	width: 124px;
+	height: 39px;
+	border: 1px solid #485563;
+}
+
+.price-item button:hover {
+	background-color: white;
+	color: #485563;
+	transition: 0.35s;
+}
+
+.best .price-item-head {
+	height: 230px;
+	border-top: 5px solid #485563;
+}
+
+.best h3 {
+	margin-top: 67px;
+}
+
+.contact .container-fluid {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+}
+
+.contact .map,
+.contact .map iframe {
+	width: 100%;
+	height: 650px;
+}
+
+.contact-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: url(../css/images/form-bg.png) no-repeat;
+	background-size: cover;
+	color: #f6f6f6;
+	font-family: montserrat;
+}
+
+.form-item {
+	width: 411px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.contact-form input {
+	height: 43px;
+}
+
+.contact-form textarea {
+	padding-top: 5px;
+	height: 143px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	outline: none;
+	background: none;
+	border: 1px solid rgb(198, 198, 198, 0.8);
+	border-radius: 2px;
+	width: 298px;
+	padding-left: 5px;
+	margin-bottom: 25px;
+}
+
+.contact-form textarea {
+	resize: none;
+}
+
+.contact-form label {
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+.contact-form button {
+	width: 118px;
+	height: 43px;
+	border: 1px solid rgb(198, 198, 198, 0.8);
+	border-radius: 2px;
+	font-size: 13px;
+	font-family: montserratBold;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form button:hover {
+	border: 1px solid rgb(198, 198, 198, 1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border: 1px solid #eaeaea;
+}
+
+.footer-row {
+	margin-top: 50px;
+	color: #29323c;
+}
+
+.footer-logo {
+	position: relative;
+	bottom: 25px;
+	font-family: airbag;
+	font-size: 48px;
+	color: #29323c;
+}
+
+.footer-logo:hover,
+.footer-logo:active {
+	transition: 0.35s;
+	color: #12161b;
+}
+
+.copyright {
+	float: left;
+	margin-top: 2px;
+}
+
+.social {
+	float: right;
+	display: flex;
+}
+
+.footer-block p {
+	color: #29323c;
+}
+
+.footer-links {
+	position: relative;
+	margin-left: 22px;
+	bottom: 7px;
+}
+
+.footer-links a img {
+	width: 35px;
+	height: 35px;
+}
+
+.footer-links a {
+	margin-right: 9px;
+}
+
+.footer-links a:last-child {
+	margin-right: 0;
 }
