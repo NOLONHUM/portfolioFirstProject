@@ -230,6 +230,7 @@ header {
 .client-text {
 	margin-top: 59px;
 	line-height: 26px;
+	min-height: 78px;
 }
 
 .quotes {
